@@ -110,7 +110,7 @@ gradle clean test
 <img title="Allure Overview" src="images/screens/allure_overview.png">
 </p>
 
-### :pushpin: Grouping tests by tested functionality
+### :pushpin: Возможность группировки тестов по проверяемой функциональности
 
 <p align="center">
 <img title="Allure Behaviors" src="images/screens/allure_behaviors.png">

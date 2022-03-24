@@ -68,7 +68,7 @@ public class MainPageComponents {
     @Step("Check the App in the Google Play")
     public MainPageComponents appCheckGoogle() {
         SelenideElement app = $("c-wiz:nth-child(1) > h1 > span");
-        app.shouldHave(Condition.text("LiveXP: Изучение Языков"));
+        app.shouldHave(Condition.text("LiveXP: Language Learning"));
         return this;
     }
 

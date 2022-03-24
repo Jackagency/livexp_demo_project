@@ -101,30 +101,16 @@ gradle clean test
   <img src="images/screens/Jenkins.png" alt="job" width="800">
 </p>
 
-*После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок <img width="2%" title="Allure Report" src="images/logo/Allure.svg"><code><strong>*Allure
-Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.*
-
-<p align="center">
-  <img src="images/screens/Jenkins2.png" alt="job" width="1000">
-</p>
-
 ## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/)
 
-### :pushpin: Общая информация
+<p align="center">
+<img title="Allure Overview" src="images/screens/allure_overview.png">
+</p>
 
-*Главная страница Allure-отчета содержит следующие информационные блоки:*
-
-> - [x] <code><strong>*ALLURE REPORT*</strong></code> - отображает дату и время прохождения теста, общее количество прогнанных кейсов, а также диаграмму с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
->- [x] <code><strong>*TREND*</strong></code> - отображает тренд прохождения тестов от сборки к сборке
->- [x] <code><strong>*SUITES*</strong></code> - отображает распределение результатов тестов по тестовым наборам
->- [x] <code><strong>*ENVIRONMENT*</strong></code> - отображает тестовое окружение, на котором запускались тесты (в данном случае информация не задана)
->- [x] <code><strong>*CATEGORIES*</strong></code> - отображает распределение неуспешно прошедших тестов по видам дефектов
->- [x] <code><strong>*FEATURES BY STORIES*</strong></code> - отображает распределение тестов по функционалу, который они проверяют
->- [x] <code><strong>*EXECUTORS*</strong></code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
+### :pushpin: Grouping tests by tested functionality
 
 <p align="center">
-  <img src="images/screens/Alure_Report3.png" alt="Allure Report" width="900">
+<img title="Allure Behaviors" src="images/screens/allure_behaviors.png">
 </p>
 
 ## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145)

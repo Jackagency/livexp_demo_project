@@ -63,4 +63,16 @@ tasks.withType(Test) {
             exceptionFormat "short"
         }
     }
+
+}
+task Search(type: Test) {
+    useJUnitPlatform{
+        includeTags "Search"
+    }
+}
+
+task Main(type: Test) {
+    useJUnitPlatform{
+        includeTags "Main"
+    }
 }

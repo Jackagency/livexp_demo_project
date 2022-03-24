@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import livexp.pages.MainPageComponents;
 import livexp.pages.MainPageObjects;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -23,6 +24,7 @@ public class MainPageTests extends TestBase {
     String languageOldRu = "Старорусский";
 
     @Test
+    @Tag("Search")
     @Description("Languages search checks")
     @DisplayName("English language search")
     void searchForAEnglish() {
@@ -35,6 +37,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("Search")
     @Description("Languages search checks")
     @DisplayName("Dutch language search")
     void searchForADutch() {
@@ -47,6 +50,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("Search")
     @Description("Languages search checks")
     @DisplayName("Old Russian language search")
     void searchForAOldRussian() {
@@ -59,6 +63,46 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("Main")
+    @Description("Blog page")
+    @DisplayName("Blog title check")
+    void blogTitleCheck() {
+        mainPageComponents
+                .openMainPage()
+                .clickBlog()
+                .switchTab()
+                .blogTitleCheck();
+    }
+
+    @Test
+    @Tag("Main")
+    @Description("App visibility")
+    @DisplayName("App visibility in the Google Play")
+    void googleAppDownload() {
+        mainPageComponents
+                .openMainPage()
+                .clickApp()
+                .googlePlayLink()
+                .switchTab()
+                .appCheckGoogle();
+    }
+
+    @Test
+    @Tag("Main")
+    @Description("App visibility")
+    @DisplayName("App visibility in the AppStore")
+    void appleAppDownload() {
+        mainPageComponents
+                .openMainPage()
+                .clickApp()
+                .appstoreLink()
+                .switchTab()
+                .appCheckAppStore();
+    }
+
+
+    @Test
+    @Tag("Main")
     @Description("Page title test")
     @DisplayName("Page title should have header text")
     void titleTest() {
@@ -74,6 +118,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("Main")
     @Description("Page console test")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {

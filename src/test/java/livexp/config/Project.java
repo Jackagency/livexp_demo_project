@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package livexp.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

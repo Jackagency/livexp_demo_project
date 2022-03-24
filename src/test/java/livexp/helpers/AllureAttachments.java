@@ -1,4 +1,4 @@
-package cloud.autotests.helpers;
+package livexp.helpers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;

@@ -1,5 +1,6 @@
 package livexp.tests;
 
+import com.codeborne.selenide.Configuration;
 import livexp.config.Project;
 import livexp.helpers.AllureAttachments;
 import livexp.helpers.DriverSettings;
@@ -17,6 +18,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class TestBase {
     @BeforeAll
     static void setUp() {
+        Configuration.baseUrl = "https://livexp.com/ru";
+        Configuration.browserSize = "1920x1080";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DriverSettings.configure();
     }

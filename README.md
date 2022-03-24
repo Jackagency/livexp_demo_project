@@ -1,80 +1,83 @@
-#King test automation project
+# Проект по автоматизации тестирования сайта СберКорус
 
-## :page_with_curl:	Content
+## :page_with_curl:	Содержание
 
-> :heavy_check_mark: [Covered functionality](#earth_africa-covered-functionality)
+> :heavy_check_mark: [Технологии и инструменты](#technologist-технологии-и-инструменты)
 >
-> :heavy_check_mark: [Technology stack](#classical_building-technology-stack)
+> :heavy_check_mark: [Реализованы проверки](#bookmark_tabs-реализованы-проверки)
 >
-> :heavy_check_mark: [Running tests from the terminal](#running-tests-from-the-terminal)
+> :heavy_check_mark: [Запуск тестов из терминала](#computer-Запуск-тестов-из-терминала)
 >
-> :heavy_check_mark: [Running Tests in Jenkins](#robot-remote-test-running)
+> :heavy_check_mark: [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
 >
-> :heavy_check_mark: [Test results report in Allure Report](#skier-main-page-of-allure-report)
+> :heavy_check_mark: [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
+> 
+> :heavy_check_mark: [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+> 
+> :heavy_check_mark: [Интеграция с Jira](#-интеграция-с-jira)
 >
-> :heavy_check_mark: [Telegram notifications using a bot](#-telegram-notifications-using-a-bot)
+> :heavy_check_mark: [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 >
-> :heavy_check_mark: [An example of running a test in Selenoid](#-an-example-of-running-a-test-in-selenoid)
+> :heavy_check_mark: [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
+## :technologist: Технологии и инструменты
 
-## :technologist: Covered functionality
+<p  align="center"
 
-> UI autotests developed <code>UI</code>.
-### UI
-
-- [x] Work page title test
-- [x] No errors in page console log
-- [x] Page title should have header text
-- [x] Blog page title test
-- [x] Service page title test
-- [x] Job page title test
-- [x] Berlin office address information verification
-- [x] Zurich office address information verification
-
-## :classical_building: Technology stack
-
-<p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
+<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
+<code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
+<code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
+<code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
+<code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
+<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
+<code><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></code>
+<code><img width="5%" title="RestAssured" src="images/logo/RestAssured.svg"></code>
+<code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
+<code><img width="5%" title="Jira" src="images/logo/Java.svg"></code>
+<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
 </p>
 
- In this project, autotests are written in <code>Java</code> using <code>Selenide</code> for UI tests.
+> *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов.*
 >
-> <code>Selenoid</code> launches browsers in <code>Docker</code> containers.
+>*Для сборки проекта используется <code><strong>*Gradle*</strong></code>.*
 >
-> <code>Allure Report</code> generates a test run report.
+>*<code><strong>*JUnit 5*</strong></code> используется как фреймворк для модульного тестирования.*
 >
-> <code>Gradle</code> is used for automated project build.
+>*Запуск тестов выполняется из <code><strong>*Jenkins*</strong></code>.*
 >
-> <code>JUnit 5</code> is used as a unit testing library.
+>*<code><strong>*Selenoid*</strong></code> используется для запуска браузеров в контейнерах  <code><strong>*Docker*</strong></code>.*
 >
-> <code>Jenkins</code> runs the tests.
-> 
-> After the run is completed, notifications are sent using the bot to <code>Telegram</code>.
+>*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
 
 
-## Running tests from the terminal
+## :bookmark_tabs: Реализованы проверки
 
-### :robot: Running Tests Locally
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
 
-```
+> - [x] *Проверка перехода на страницу авторизации продукта 'Курьер'*
+>- [x] *Проверка ошибок в консоле*
+>- [x] *Проверка раздела 'О компании'*
+>- [x] *Проверка перехода на страницу клиента из раздела 'Клиенты'*
+>- [x] *Проверка банера главной страницы*
+>- [x] *Проверка раздела 'Клиенты'*
+>- [x] *Проверка работы поиска*
+>- [x] *Проверка оформления подписки по почте*
+>- [x] *Проверка заголовка главной страницы*
+
+## :computer: Запуск тестов из терминала 
+
+### Локальный запуск тестов
+
+```bash
 gradle clean test
 ```
 
-### :robot: Remote test running
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/AUTO-760/"> job </a>
+### Удаленный запуск тестов
 
-```
-clean
-test
+```bash
+gradle clean test 
 -Dbrowser=${BROWSER}
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
@@ -84,49 +87,81 @@ test
 -Dthreads=${THREADS}
 ```
 
-### :robot: Build Options
+### Параметры сборки
 
-> <code>REMOTE_URL</code> – the address of the remote server where the tests will run.
+> <code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 >
-> <code>BROWSER</code> – the browser the tests will be run (_default - <code>chrome</code>_).
+> <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
 >
-> <code>BROWSER_VERSION</code> – version of the browser the tests will be run (_default - <code>91.0</code>_).
+> <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (_по умолчанию - <code>91.0</code>_).
 >
-> <code>BROWSER_SIZE</code> – the size of the browser window the tests will be run (_default - <code>1920x1080</code>_).
+> <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
 
-
-### :pushpin: Main page of <a target="_blank" href="https://jenkins.autotests.cloud/job/AUTO-760/18/allure/">Allure-report</a>
+*Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
 
 <p align="center">
-<img title="Allure Overview" src="images/screens/allure_overview.png">
+  <img src="images/screens/Jenkins.png" alt="job" width="800">
 </p>
 
-### :pushpin: Grouping tests by tested functionality
+*После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
+значок <img width="2%" title="Allure Report" src="images/logo/Allure.svg"><code><strong>*Allure
+Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.*
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screens/allure_behaviors.png">
+  <img src="images/screens/Jenkins2.png" alt="job" width="1000">
 </p>
 
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/)
 
-### :pushpin: Main dashboard
+### :pushpin: Общая информация
+
+*Главная страница Allure-отчета содержит следующие информационные блоки:*
+
+> - [x] <code><strong>*ALLURE REPORT*</strong></code> - отображает дату и время прохождения теста, общее количество прогнанных кейсов, а также диаграмму с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
+>- [x] <code><strong>*TREND*</strong></code> - отображает тренд прохождения тестов от сборки к сборке
+>- [x] <code><strong>*SUITES*</strong></code> - отображает распределение результатов тестов по тестовым наборам
+>- [x] <code><strong>*ENVIRONMENT*</strong></code> - отображает тестовое окружение, на котором запускались тесты (в данном случае информация не задана)
+>- [x] <code><strong>*CATEGORIES*</strong></code> - отображает распределение неуспешно прошедших тестов по видам дефектов
+>- [x] <code><strong>*FEATURES BY STORIES*</strong></code> - отображает распределение тестов по функционалу, который они проверяют
+>- [x] <code><strong>*EXECUTORS*</strong></code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/allure_overview_dashboard.png">
+  <img src="images/screens/Alure_Report3.png" alt="Allure Report" width="900">
 </p>
 
+## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145)
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Telegram notifications using a bot
-
-> After the build is completed, a special bot created in <code>Telegram</code> automatically processes and sends a message with a run report.
+### :pushpin: Основной дашборд
 
 <p align="center">
-<img title="Telegram Notifications" src="images/screens/telegram_notifications.png">
+  <img src="images/screens/Alure_TO.png" alt="dashboards" width="900">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> An example of running a test in Selenoid
+### :pushpin: Тест-кейсы
 
-> A video is attached to each test in the report. One of these videos is shown below.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/selenoid_video.gif">
+  <img src="images/screens/Alure_TO3.png" alt="test cases" width="900">
+</p>
+
+## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638)
+
+<p align="center">
+  <img src="images/screens/Jira.png" alt="jira" width="1000">
+</p>
+
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+
+> После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
+
+<p align="center">
+<img title="Telegram Notifications" src="images/screens/Telegram.png">
+</p>
+
+## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+
+> К каждому тесту в отчете прилагается видео.
+<p align="center">
+  <img title="Selenoid Video" src="images/gif/test.gif">
 </p>

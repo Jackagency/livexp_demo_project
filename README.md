@@ -145,12 +145,6 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screens/Alure_TO3.png" alt="test cases" width="900">
 </p>
 
-## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638)
-
-<p align="center">
-  <img src="images/screens/Jira.png" alt="jira" width="1000">
-</p>
-
 ## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
